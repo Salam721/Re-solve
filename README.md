@@ -73,20 +73,6 @@ DEMO_MODE=mock python -m pytest -q
 ```
 31 tests cover the pre-check, policy rules, agent-output validation, the pipeline (including agent failures), and the API.
 
-## Demo script (about 5 minutes)
-
-| Time | What to do | What to say |
-| --- | --- | --- |
-| 0:00 | Show the feed | "Cyberbullying happens in the moment. Platforms react after the harm. Re-solve steps in before the post." Name the audience: any social platform, with teens and young adults as the most affected group. |
-| 0:30 | Post `Love the colors in the sky!` | "Clean comments post instantly. Nobody gets interrupted." |
-| 0:50 | Post `this is so st00pid lol` | "Disguised spelling is caught. Mild tier: a warning, alternatives, and the writer keeps the choice." Select **Use this**, then **Post**. |
-| 1:40 | Post `nobody wants you here, ur so ugly` | "Moderate: targeted exclusion and body shaming." Select **Post anyway**, then open **Moderator queue**. |
-| 2:30 | Post `watch your back. I know where you live` | "Severe: a threat. Post anyway is gone and a moderator was alerted." |
-| 3:00 | Point at **Under the hood**, then switch to the Foundry portal | "Three Foundry agents with separate roles, Content Safety, and a policy guard in code. The escalation agent can raise the response but never lower it." Show traces in the portal. |
-| 4:00 | Safety slide | Personal info masked before any cloud call; only escalated comments stored, deleted after 24h; crisis resources for self-harm; limitations below. |
-| 4:45 | Close | "Next: patterns across multiple comments, more languages, and a moderator appeal flow." |
-
-Rehearse with the exact comments above, and record a backup video.
 
 ## Safety and privacy
 
