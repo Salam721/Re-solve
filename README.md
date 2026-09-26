@@ -1,6 +1,6 @@
 # Re-solve
 
-A multi-agent system built on **Microsoft Foundry** that checks social media comments *before* they're posted. When a comment looks like cyberbullying, it explains why, offers kinder ways to say it, and escalates by severity. Mild comments can still be posted, moderate ones go to a moderator if posted anyway, and severe ones are blocked and alerted.
+A multi-agent system built with **Microsoft Foundry** that checks social media comments *before* they're posted. When a comment looks like cyberbullying, it explains why, offers kinder ways to say it, and escalates by severity. Mild comments can still be posted, moderate ones go to a moderator if posted anyway, and severe ones are blocked and alerted.
 
 Spec: `.kiro/specs/re-solve/` (requirements, design, tasks).
 
