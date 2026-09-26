@@ -1,0 +1,175 @@
+{
+  "_note": "Word bank for the pre-check. Every hit is a hint for the classifier agent; only entries with floor=true force a severity. Slurs are intentionally not listed here: Azure AI Content Safety's hate category covers them. Teams can add terms; keep phrases lowercase.",
+  "entries": [
+    {
+      "phrase": "idiot",
+      "category": "insult",
+      "severity": "mild"
+    },
+    {
+      "phrase": "stupid",
+      "category": "insult",
+      "severity": "mild"
+    },
+    {
+      "phrase": "stoopid",
+      "category": "insult",
+      "severity": "mild"
+    },
+    {
+      "phrase": "dumb",
+      "category": "insult",
+      "severity": "mild"
+    },
+    {
+      "phrase": "dum",
+      "category": "insult",
+      "severity": "mild"
+    },
+    {
+      "phrase": "moron",
+      "category": "insult",
+      "severity": "mild"
+    },
+    {
+      "phrase": "loser",
+      "category": "insult",
+      "severity": "mild"
+    },
+    {
+      "phrase": "pathetic",
+      "category": "insult",
+      "severity": "mild"
+    },
+    {
+      "phrase": "trash",
+      "category": "insult",
+      "severity": "mild"
+    },
+    {
+      "phrase": "garbage",
+      "category": "insult",
+      "severity": "mild"
+    },
+    {
+      "phrase": "cringe",
+      "category": "mockery",
+      "severity": "mild"
+    },
+    {
+      "phrase": "ugly",
+      "category": "body_shaming",
+      "severity": "moderate"
+    },
+    {
+      "phrase": "fat",
+      "category": "body_shaming",
+      "severity": "mild"
+    },
+    {
+      "phrase": "freak",
+      "category": "insult",
+      "severity": "moderate"
+    },
+    {
+      "phrase": "worthless",
+      "category": "harassment",
+      "severity": "moderate"
+    },
+    {
+      "phrase": "nobody likes you",
+      "category": "exclusion",
+      "severity": "moderate"
+    },
+    {
+      "phrase": "no one likes you",
+      "category": "exclusion",
+      "severity": "moderate"
+    },
+    {
+      "phrase": "no one wants you here",
+      "category": "exclusion",
+      "severity": "moderate"
+    },
+    {
+      "phrase": "nobody wants you here",
+      "category": "exclusion",
+      "severity": "moderate"
+    },
+    {
+      "phrase": "everyone hates you",
+      "category": "exclusion",
+      "severity": "moderate"
+    },
+    {
+      "phrase": "go away",
+      "category": "exclusion",
+      "severity": "mild"
+    },
+    {
+      "phrase": "shut up",
+      "category": "insult",
+      "severity": "mild"
+    },
+    {
+      "phrase": "kill yourself",
+      "category": "self_harm_encouragement",
+      "severity": "severe",
+      "floor": true
+    },
+    {
+      "phrase": "kys",
+      "category": "self_harm_encouragement",
+      "severity": "severe",
+      "floor": true
+    },
+    {
+      "phrase": "go die",
+      "category": "self_harm_encouragement",
+      "severity": "severe",
+      "floor": true
+    },
+    {
+      "phrase": "you should die",
+      "category": "self_harm_encouragement",
+      "severity": "severe",
+      "floor": true
+    },
+    {
+      "phrase": "the world would be better without you",
+      "category": "self_harm_encouragement",
+      "severity": "severe",
+      "floor": true
+    },
+    {
+      "phrase": "i know where you live",
+      "category": "threat",
+      "severity": "severe",
+      "floor": true
+    },
+    {
+      "phrase": "watch your back",
+      "category": "threat",
+      "severity": "severe",
+      "floor": true
+    },
+    {
+      "phrase": "i will find you",
+      "category": "threat",
+      "severity": "severe",
+      "floor": true
+    },
+    {
+      "phrase": "i'm going to hurt you",
+      "category": "threat",
+      "severity": "severe",
+      "floor": true
+    },
+    {
+      "phrase": "im going to hurt you",
+      "category": "threat",
+      "severity": "severe",
+      "floor": true
+    }
+  ]
+}

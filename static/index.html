@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Re-solve</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="appbar">
+    <div class="brand">
+      <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="13" fill="none" stroke="currentColor" stroke-width="3"/><path d="M11 13v6M21 13v6" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
+      <span class="brand-name">Re-solve</span>
+    </div>
+    <nav class="tabs" aria-label="Views">
+      <button class="tab" data-view="feed" aria-current="page">Feed</button>
+      <button class="tab" data-view="moderation">Moderator queue <span class="count" id="mod-count" hidden>0</span></button>
+    </nav>
+    <div class="mode" id="mode" role="status">Connecting…</div>
+  </header>
+
+  <main class="layout">
+    <!-- FEED VIEW -->
+    <section class="column" id="view-feed">
+      <article class="post" id="post">
+        <div class="byline">
+          <span class="avatar" aria-hidden="true">M</span>
+          <div><strong id="post-author">Maya Chen</strong> <span class="muted" id="post-handle">@mayadraws</span></div>
+        </div>
+        <p class="post-text" id="post-text"></p>
+        <svg class="artwork" viewBox="0 0 600 300" role="img" aria-label="Maya's digital painting: a sunset over layered hills">
+          <defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3B4F9E"/><stop offset=".55" stop-color="#C96F7A"/><stop offset="1" stop-color="#F2B66D"/></linearGradient></defs>
+          <rect width="600" height="300" fill="url(#sky)"/>
+          <circle cx="410" cy="190" r="46" fill="#FBE3A6"/>
+          <path d="M0 210 C120 160 220 230 330 190 S520 170 600 200 V300 H0Z" fill="#6E4A7E"/>
+          <path d="M0 245 C140 215 260 260 380 235 S540 225 600 245 V300 H0Z" fill="#43305A"/>
+          <path d="M0 275 C160 260 300 290 450 270 S560 265 600 275 V300 H0Z" fill="#241A38"/>
+        </svg>
+      </article>
+
+      <section class="thread" aria-label="Comments">
+        <h2 class="thread-title">Comments</h2>
+        <ol class="comments" id="comments"></ol>
+      </section>
+
+      <form class="composer" id="composer" novalidate>
+        <label for="comment-input" class="composer-label">Add a comment</label>
+        <textarea id="comment-input" rows="3" maxlength="1000" placeholder="Say something to Maya…" required></textarea>
+        <div class="composer-row">
+          <details class="privacy">
+            <summary>Comments are checked before posting</summary>
+            <p>Re-solve checks comments for bullying before they go live. Emails, phone numbers, and addresses are hidden from the checker. Only comments sent to a moderator are kept, and those are deleted after <span id="retention">24</span> hours. It can misread sarcasm, slang, and other languages.</p>
+          </details>
+          <button type="submit" class="btn btn-primary" id="post-btn">Post</button>
+        </div>
+      </form>
+
+      <section class="re-solve" id="re-solve" hidden aria-live="polite" tabindex="-1"></section>
+    </section>
+
+    <!-- MODERATION VIEW -->
+    <section class="column" id="view-moderation" hidden>
+      <h1 class="view-title">Moderator queue</h1>
+      <p class="muted" id="mod-intro">Comments escalated by Re-solve. Personal info is masked. Items are deleted when resolved or after the retention period.</p>
+      <ul class="flags" id="flags"></ul>
+    </section>
+
+    <!-- UNDER THE HOOD -->
+    <aside class="hood" aria-labelledby="hood-title">
+      <h2 id="hood-title">Under the hood</h2>
+      <p class="muted" id="hood-sub">Post a comment to see each step, which agent ran it, and what it decided.</p>
+      <ol class="trace" id="trace"></ol>
+    </aside>
+  </main>
+
+  <div class="toast" id="toast" role="status" hidden></div>
+  <script src="app.js"></script>
+</body>
+</html>
