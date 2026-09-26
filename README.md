@@ -63,8 +63,6 @@ Foundry calls MCP servers from the cloud, so the server needs a public URL.
 
 The header then says **+ MCP tools**, and tool calls appear in the classifier's trace output. The tunnel URL is public, so shut it down after the demo.
 
-### Backup mode
-
 
 ## Tests
 
@@ -82,11 +80,3 @@ DEMO_MODE=mock python -m pytest -q
 - Keys stay in `.env` on the server; the browser never sees them.
 - Severity floors and escalation rules are enforced in code, so a wrong or failed agent reply can't weaken them.
 - Crisis resources (988, Crisis Text Line, findahelpline.com) appear for self-harm content or a writer in distress.
-
-## Limitations
-
-- It can misread sarcasm, slang, reclaimed words, and non-English text.
-- It judges one comment at a time, not harassment patterns.
-- The word bank is intentionally small; Content Safety and the classifier carry most of the detection.
-- It supports human moderators rather than replacing them.
-- The demo uses in-memory storage, so data resets when the server restarts.
