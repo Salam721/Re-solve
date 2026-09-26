@@ -65,7 +65,6 @@ The header then says **+ MCP tools**, and tool calls appear in the classifier's 
 
 ### Backup mode
 
-`DEMO_MODE=mock` runs everything offline with rule-based stand-ins. The header shows **Offline backup (mock agents)**. Use it only if Foundry is unreachable, and say so to the judges.
 
 ## Tests
 
